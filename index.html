@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SignupForm</title>
+  <link
+    rel="stylesheet prefetch"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+  >
+</head>
+
+<body>
+
+  <h3>Signup Form</h3>
+  <ul class="nav nav-pills">
+    <li class="active">
+      <a
+      id="loginTab"  
+      data-toggle="tab"
+        href="#loginTabContent"
+      >Login</a>
+    </li>
+    <li>
+      <a
+        data-toggle="tab"
+        href="#create"
+      >Create Account</a>
+    </li>
+  </ul>
+  <div class="tab-content">
+    <!-- LOGIN TAB -->
+    <div
+      id="loginTabContent"
+      class="tab-pane fade active in"
+    >
+      <form
+        id="loginForm"
+        novalidate
+      >
+        <div class="form-group">
+          <label
+            class="control-label"
+            for="inputEmail"
+          >Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Email"
+            >
+            <div
+            id="emailError"
+            class="alert alert-danger hidden"
+            role="alert"
+          ></div>
+        </div>
+        <div class="form-group">
+          <label
+            class="control-label"
+            for="inputPassword"
+          >Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword"
+              placeholder="Password"
+            >
+            <div
+            id="passwordError"
+            class="alert alert-danger hidden"
+            role="alert"
+          ></div>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-default"
+          id="submitButton"
+        >Submit</button>
+          </form>
+  </div>
+  <!-- SIGNUP TAB -->
+  <div
+    id="create"
+    class="tab-pane fade"
+  >
+    <form
+      id="newAccountForm"
+      novalidate
+    >
+      <div class="form-group">
+        <label
+          class="control-label"
+          for="username"
+        >Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            placeholder="Choose a username"
+          >
+            <div
+              id="unError"
+              class="alert alert-danger hidden"
+              role="alert"
+            ></div></div>
+
+      <div
+        id="acctExists"
+        class="alert alert-info hidden"
+        role="alert"
+      >
+        <a
+          href="#loginTabContent"
+          data-toggle="tab"
+          class="alert-link"
+        >Account exists. Please login</a>
+          </div>
+          <div class="form-group">
+            <label
+              class="control-label"
+              for="choosePassword"
+            >Create Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="choosePassword"
+                placeholder="Choose a Password"
+              >
+              <div
+              id="pwError"
+              class="alert alert-danger hidden"
+              role="alert"
+            ></div>
+          </div>
+          <div class="form-group">
+            <label
+              class="control-label"
+              for="confirmPassword"
+            >Confirm Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                placeholder="Re-enter your Password"
+              >
+              <div
+              id="confirmError"
+              class="alert alert-danger hidden"
+              role="alert"
+            ></div>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-default"
+            id="signupSubmit"
+          >Submit</button>
+            </form>
+            </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="js/index.js"></script>
+</body>
+
+</html>

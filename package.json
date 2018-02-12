@@ -1,0 +1,15 @@
+{
+  "name": "signupform",
+  "version": "1.0.0",
+  "description": "A Pen created at CodePen.io. You can find this one at https://codepen.io/pnykaza/pen/GQWyVb.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --port=1337 --open=./"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
